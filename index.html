@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>milapaños</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="marco">
+    <div class="cabecera">
+      <h1>
+        <p style="text-align: center">Bienvenido a Milapaños</p>
+      </h1>
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <img
+          src="gif\logo.gif"
+          alt="logo-empresa"
+          width="200"
+          height="200"
+        />
+          </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotrosA.html">Nosotros</a></li>
+            <li><a href="Acontactos.html">Contacto</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="cuerpo">
+      <div class="columna_derecha">
+        <h2>ofertas</h2>
+        <nav>
+          <ul>
+            <li><a href="gif/ofertacocina.gif">Ofertas Cocinas</a></li>
+            <li><a href="gif/ofertabaño.gif">Ofertas Baños</a></li>
+            <li><a href="gif/ofetageneral.gif">Oferta especial</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="columna_izquierda">
+        <h2>Trabajos realizados</h2>
+        <nav>
+          <ul>
+            <li><a href="gif/baños.gif">BAÑOS</a></li>
+            <li><a href="gif/cocinas.gif">COCINAS</a></li>
+            <li><a href="gif/piscinas.gif">PISCINAS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="columna_central">
+        <h2>Servicios</h2>
+        Realizamos todo tipo de tareas.<br />
+        No dudes en consultar tus ideas
+        <center><img
+          src="gif/Doc12.gif"
+          alt="logo-empresa"
+          width="200"
+          height="200"
+        /></center>
+      </div>
+    </div>
+    <div class="pie">
+      <div class="contact_form">
+        <div class="formulario">
+          <h1>Formulario de contacto</h1>
+          <h3>Escríbenos y nos pondremos en contacto contigo</h3>
+
+          <form action="submeter-formulario.php" method="post">
+            <p>
+              <label for="nombre" class="colocar_nombre"
+                >Nombre
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="text"
+                name="introducir_nombre"
+                id="nombre"
+                required="obligatorio"
+                placeholder="Escribe tu nombre"
+              />
+            </p>
+
+            <p>
+              <label for="email" class="colocar_email"
+                >Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="email"
+                name="introducir_email"
+                id="email"
+                required="obligatorio"
+                placeholder="Escribe tu Email"
+              />
+            </p>
+
+            <p>
+              <label for="telefone" class="colocar_telefono">Teléfono </label>
+              <input
+                type="tel"
+                name="introducir_telefono"
+                id="telefono"
+                placeholder="Escribe tu teléfono"
+              />
+            </p>
+
+            <p>
+              <label for="website" class="colocar_website">Sitio web </label>
+              <input
+                type="url"
+                name="introducir_website"
+                id="website"
+                placeholder="Escribe la URL de tu web"
+              />
+            </p>
+
+            <p>
+              <label for="asunto" class="colocar_asunto"
+                >Asunto
+                <span class="obligatorio">*</span>
+                <select name="tipo" id="tipo">
+                  <option value="baño">Baño</option>
+                  <option value="cocina">cocina</option>
+                  <option value="otros">Otros</option>
+                </select>
+              </label>
+              <input
+                type="text"
+                name="introducir_asunto"
+                id="assunto"
+                required="obligatorio"
+                placeholder="Escribe un asunto"
+              />
+            </p>
+
+            <p>
+              <label for="mensaje" class="colocar_mensaje"
+                >Mensaje
+                <span class="obligatorio">*</span>
+              </label>
+              <textarea
+                name="introducir_mensaje"
+                class="texto_mensaje"
+                id="mensaje"
+                required="obligatorio"
+                placeholder="Deja aquí tu comentario..."
+              ></textarea>
+            </p>
+
+            <button type="submit" name="enviar_formulario" id="enviar">
+              <p>Enviar</p>
+            </button>
+
+            <p class="aviso">
+              <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <ul>
+		<li><a href="aviso-legal.html">Aviso legal</a></li>
+		<li><a href="privacidad.html">Provacidad</a></li>
+		<li><a href="contactar.html">Contactar</a></li>
+	</ul>
+</footer>
+</html>
